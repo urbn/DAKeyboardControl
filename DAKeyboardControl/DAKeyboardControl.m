@@ -461,6 +461,7 @@ static char UIViewIsPanning;
 // The default implementation of this method does nothing.
 - (void)didAddSubview:(UIView *)subview
 {
+    return;
     if ([subview isKindOfClass:[UITextView class]] || [subview isKindOfClass:[UITextField class]]) {
         if (!subview.inputAccessoryView) {
             UITextField *textField = (UITextField *)subview;
